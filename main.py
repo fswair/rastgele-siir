@@ -31,7 +31,7 @@ async def search_poets(sair: str, request: Request, siirler: bool | int = False)
 @app.get("/ara/siir")
 async def search_poems(siir: str, request: Request, sayfa: int = 1):
     
-    poems = antoloji.get_poems(siir, sayfa=sayfa)
+    poems = antoloji.get_poems(siir, sayfa)
     return poems
 
 @app.get("/rastgele")
