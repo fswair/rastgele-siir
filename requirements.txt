@@ -2,4 +2,3 @@ fastapi
 uvicorn
 requests
 bs4
-pymongo
