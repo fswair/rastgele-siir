@@ -23,7 +23,7 @@ To get started with this API, follow the instructions below.
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/antoloji-api.git
+    git clone https://github.com/fswair/rastgele-siir.git
     cd antoloji-api
     ```
 
