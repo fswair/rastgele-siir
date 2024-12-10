@@ -173,22 +173,22 @@ API'yi kullanmak için, yukarıda tanımlanan uç noktalara HTTP istekleri gönd
 
 1. **Bir şair arayın:**
    ```bash
-   curl -X GET "http://localhost:8000/ara/sair?sair=Yunus%20Emre"
+   curl -X GET "http://apiv2.mert.uno/ara/sair?sair=Yunus%20Emre"
    ```
 
 2. **Şiir arayın:**
    ```bash
-   curl -X GET "http://localhost:8000/ara/siir?siir=Aşk&sayfa=1"
+   curl -X GET "http://apiv2.mert.uno/ara/siir?siir=Aşk&sayfa=1"
    ```
 
 3. **Rastgele bir şiir alın:**
    ```bash
-   curl -X GET "http://localhost:8000/rastgele"
+   curl -X GET "http://apiv2.mert.uno/rastgele"
    ```
 
 4. **Belirli bir şiiri uç noktaya göre alın:**
    ```bash
-   curl -X GET "http://localhost:8000/siir/ask-iki-kisiliktir-siiri"
+   curl -X GET "http://apiv2.mert.uno/siir/ask-iki-kisiliktir-siiri"
    ```
 
 ### Katkıda Bulunma
