@@ -23,7 +23,7 @@ Bu API'yi kullanmaya başlamak için aşağıdaki talimatları izleyin.
 
 1. Depoyu klonlayın:
     ```bash
-    git clone https://github.com/kullaniciadi/antoloji-api.git
+    git clone https://github.com/fswair/rastgele-siir.git
     cd antoloji-api
     ```
 
