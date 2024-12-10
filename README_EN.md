@@ -173,22 +173,22 @@ To use the API, you can send HTTP requests to the endpoints defined above. Here 
 
 1. **Search for a poet:**
    ```bash
-   curl -X GET "http://localhost:8000/ara/sair?sair=Yunus%20Emre"
+   curl -X GET "http://apiv2.mert.uno/ara/sair?sair=Yunus%20Emre"
    ```
 
 2. **Search for poems:**
    ```bash
-   curl -X GET "http://localhost:8000/ara/siir?siir=Aşk&sayfa=1"
+   curl -X GET "http://apiv2.mert.uno/ara/siir?siir=Aşk&sayfa=1"
    ```
 
 3. **Get a random poem:**
    ```bash
-   curl -X GET "http://localhost:8000/rastgele"
+   curl -X GET "http://apiv2.mert.uno/rastgele"
    ```
 
 4. **Get a specific poem by endpoint:**
    ```bash
-   curl -X GET "http://localhost:8000/siir/ask-iki-kisiliktir-siiri"
+   curl -X GET "http://apiv2.mert.uno/siir/ask-iki-kisiliktir-siiri"
    ```
 
 ### Contributing
