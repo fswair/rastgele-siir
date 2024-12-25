@@ -13,30 +13,21 @@ app.add_middleware(
 )
 
 @app.get("/ara/sair")
-async def search_poets(sair: str, request: Request, siirler: bool | int = False):
-    
+async def search_poets(sair: str, request: Request):
     poet = antoloji.get_poet(sair)
-    if not siirler:
-        return {
-        "status": "found",
-        "poet": f"https://www.antoloji.com{poet}"
-    }
-    poems = antoloji.get_poems_of_poet(poet)
     return {
         "status": "found",
-        "poet": f"https://www.antoloji.com{poet}",
-        "poems": poems
+        "poet": f"https://www.antoloji.com{poet}"
     }
     
 @app.get("/ara/siir")
 async def search_poems(siir: str, request: Request, sayfa: int = 1):
-    
     poems = antoloji.get_poems(siir, sayfa)
     return poems
 
+@app.get("/random")
 @app.get("/rastgele")
 async def get_random_poem(request: Request):
-    
     poem = antoloji.get_random_poem()
     data = {
         "endpoint": f"/siir{poem.endpoint}",
